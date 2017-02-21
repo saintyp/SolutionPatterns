@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel=stylesheet href="css\StyleSheet.css">
+	<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+<script type="text/javascript" language="javascript">
+var pageID = 42;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+</script>
+</head>
+<body>
+   <ul>
+        <li><a href=".\index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Application Eco System</a>
+            <div class="dropdown-content">
+                <a href="./ApplicationEcoSystem/AppEcoSystem.htm">Application Eco System</a>
+                <a href="#">Other Info (Broken Link)</a>
+            </div>
+		<li class="dropdown">
+            <a href="#" class="dropbtn">How the site works</a>
+            <div class="dropdown-content">
+                <a href="HowitWorks.html">How it works Part 1</a>
+				<a href="HowitWorks2.html">How it works Part 2</a>
+				<a href="12FactorsPlainEnglish.html">12 Factors Plain English</a>
+                <a href="#">Other Stuff (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Reference Architectures</a>
+            <div class="dropdown-content">
+				<a href="ReferenceArchitectures.html">Reference Architectures</a>
+                <a href="ecommerce.html">E Commerce (Broken Link)</a>
+                <a href="bigdata.html">Big Data (Broken Link)</a>
+                <a href="ETL.html">ETL (Broken Link)</a>
+                <a href="Customerinsigts.html">Customer Insights (Broken Link)</a>
+                <a href="onlineshop.html">Online Shop</a>
+                <a href="others.html">Others (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Integration Patterns</a>
+            <div class="dropdown-content">
+                <a href="WhyIntegration.html">Why Integration Patterns</a>
+                <a href="IAM.html">IAM  (Broken Link)</a>
+                <a href="Logging.html">Logging</a>
+                <a href="DataSecurity.html">Data Security (Broken Link)</a>
+                </div>
+        </li>
+        <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
+    </ul>
+    <div>
+    <h1>First Page</h1>
+	<center>
+  <IMG id="ConvertedImage" SRC=".\images\firstPage.png" ALT="FirstPage" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+    </center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Data-analytics" origTitle="Data-analytics" TITLE="Data-analytics" HREF="../dataAnalytics.html" target="_top" COORDS="512,423,508,423,480,423,480,442,508,442,512,442,563,442,563,423,512,423" onmouseover="UpdateTooltip(this,42,18,event)" onfocus="UpdateTooltip(this,42,18,event)" onclick="return OnShapeClick(42,18,event);" onkeyup="OnShapeKey(42,18,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Message-Bus/Event Driven" origTitle="Message-Bus/Event Driven" TITLE="Message-Bus/Event Driven" HREF="../eventdriven.html" target="_top" COORDS="525,389,520,389,499,389,495,389,444,389,444,408,495,408,499,408,520,408,525,408,599,408,599,389,525,389" onmouseover="UpdateTooltip(this,42,17,event)" onfocus="UpdateTooltip(this,42,17,event)" onclick="return OnShapeClick(42,17,event);" onkeyup="OnShapeKey(42,17,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Component based/Microservices" origTitle="Component based/Microservices" TITLE="Component based/Microservices" HREF="../microservices.html" target="_top" COORDS="537,351,532,351,426,351,426,370,532,370,537,370,617,370,617,351,537,351" onmouseover="UpdateTooltip(this,42,16,event)" onfocus="UpdateTooltip(this,42,16,event)" onclick="return OnShapeClick(42,16,event);" onkeyup="OnShapeKey(42,16,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Alerting" origTitle="Alerting" TITLE="Alerting" HREF="../alerting.html" target="_top" COORDS="659,697,659,717,705,717,705,697,659,697" onmouseover="UpdateTooltip(this,42,35,event)" onfocus="UpdateTooltip(this,42,35,event)" onclick="return OnShapeClick(42,35,event);" onkeyup="OnShapeKey(42,35,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Monitoring" origTitle="Monitoring" TITLE="Monitoring" HREF="../monitoring.html" target="_top" COORDS="489,697,489,717,554,717,554,697,489,697" onmouseover="UpdateTooltip(this,42,34,event)" onfocus="UpdateTooltip(this,42,34,event)" onclick="return OnShapeClick(42,34,event);" onkeyup="OnShapeKey(42,34,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Logging" origTitle="Logging" TITLE="Logging" HREF="../logging.html" target="_top" COORDS="344,697,344,717,389,717,389,697,344,697" onmouseover="UpdateTooltip(this,42,33,event)" onfocus="UpdateTooltip(this,42,33,event)" onclick="return OnShapeClick(42,33,event);" onkeyup="OnShapeKey(42,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Automatic release management" origTitle="Automatic release management" TITLE="Automatic release management" HREF="../autoreleasemanagement.html" target="_top" COORDS="424,96,424,115,610,115,610,96,424,96" onmouseover="UpdateTooltip(this,42,31,event)" onfocus="UpdateTooltip(this,42,31,event)" onclick="return OnShapeClick(42,31,event);" onkeyup="OnShapeKey(42,31,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Automation Testing" origTitle="Automation Testing" TITLE="Automation Testing" HREF="../automationtesting.html" target="_top" COORDS="462,79,462,98,577,98,577,79,462,79" onmouseover="UpdateTooltip(this,42,30,event)" onfocus="UpdateTooltip(this,42,30,event)" onclick="return OnShapeClick(42,30,event);" onkeyup="OnShapeKey(42,30,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="CCA" origTitle="CCA" TITLE="CCA" HREF="../cca.html" target="_top" COORDS="508,62,508,81,531,81,531,62,508,62" onmouseover="UpdateTooltip(this,42,29,event)" onfocus="UpdateTooltip(this,42,29,event)" onclick="return OnShapeClick(42,29,event);" onkeyup="OnShapeKey(42,29,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Continuous Delivery/Continuous integration" origTitle="Continuous Delivery/Continuous integration" TITLE="Continuous Delivery/Continuous integration" HREF="../cicd.html" target="_top" COORDS="529,40,524,40,407,40,407,59,524,59,529,59,663,59,663,40,529,40" onmouseover="UpdateTooltip(this,42,28,event)" onfocus="UpdateTooltip(this,42,28,event)" onclick="return OnShapeClick(42,28,event);" onkeyup="OnShapeKey(42,28,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Client access security brokers" origTitle="Client access security brokers" TITLE="Client access security brokers" HREF="../casb.html" target="_top" COORDS="12,406,12,425,182,425,182,406,12,406" onmouseover="UpdateTooltip(this,42,26,event)" onfocus="UpdateTooltip(this,42,26,event)" onclick="return OnShapeClick(42,26,event);" onkeyup="OnShapeKey(42,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Data Encryption" origTitle="Data Encryption" TITLE="Data Encryption" HREF="../dataencryption.html" target="_top" COORDS="50,298,50,317,143,317,143,298,50,298" onmouseover="UpdateTooltip(this,42,25,event)" onfocus="UpdateTooltip(this,42,25,event)" onclick="return OnShapeClick(42,25,event);" onkeyup="OnShapeKey(42,25,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SSL/https" origTitle="SSL/https" TITLE="SSL/https" HREF="../ssl.html" target="_top" COORDS="94,367,88,367,69,367,69,387,88,387,94,387,124,387,124,367,94,367" onmouseover="UpdateTooltip(this,42,24,event)" onfocus="UpdateTooltip(this,42,24,event)" onclick="return OnShapeClick(42,24,event);" onkeyup="OnShapeKey(42,24,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="IAM/PAM" origTitle="IAM/PAM" TITLE="IAM/PAM" HREF="../iam.html" target="_top" COORDS="97,332,92,332,68,332,68,351,92,351,97,351,125,351,125,332,97,332" onmouseover="UpdateTooltip(this,42,23,event)" onfocus="UpdateTooltip(this,42,23,event)" onclick="return OnShapeClick(42,23,event);" onkeyup="OnShapeKey(42,23,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Integration Pub/sub" origTitle="Integration Pub/sub" TITLE="Integration Pub/sub" HREF="../pubsub.html" target="_top" COORDS="708,568,702,568,612,568,612,587,702,587,708,587,729,587,729,568,708,568" onmouseover="UpdateTooltip(this,42,20,event)" onfocus="UpdateTooltip(this,42,20,event)" onclick="return OnShapeClick(42,20,event);" onkeyup="OnShapeKey(42,20,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Integration API" origTitle="Integration API" TITLE="Integration API" HREF="../integrationApi.html" target="_top" COORDS="316,568,316,587,403,587,403,568,316,568" onmouseover="UpdateTooltip(this,42,19,event)" onfocus="UpdateTooltip(this,42,19,event)" onclick="return OnShapeClick(42,19,event);" onkeyup="OnShapeKey(42,19,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Backup/Restore" origTitle="Backup/Restore" TITLE="Backup/Restore" HREF="../backup.html" target="_top" COORDS="932,461,927,461,885,461,885,481,927,481,932,481,977,481,977,461,932,461" onmouseover="UpdateTooltip(this,42,14,event)" onfocus="UpdateTooltip(this,42,14,event)" onclick="return OnShapeClick(42,14,event);" onkeyup="OnShapeKey(42,14,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Analytics" origTitle="Analytics" TITLE="Analytics" HREF="../dataAnalytics.html" target="_top" COORDS="905,416,905,435,957,435,957,416,905,416" onmouseover="UpdateTooltip(this,42,13,event)" onfocus="UpdateTooltip(this,42,13,event)" onclick="return OnShapeClick(42,13,event);" onkeyup="OnShapeKey(42,13,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Transient" origTitle="Transient" TITLE="Transient" HREF="../dataTransient.html" target="_top" COORDS="904,374,904,393,958,393,958,374,904,374" onmouseover="UpdateTooltip(this,42,12,event)" onfocus="UpdateTooltip(this,42,12,event)" onclick="return OnShapeClick(42,12,event);" onkeyup="OnShapeKey(42,12,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Persist" origTitle="Persist" TITLE="Persist" HREF="../dataPersist.html" target="_top" COORDS="912,332,912,351,950,351,950,332,912,332" onmouseover="UpdateTooltip(this,42,10,event)" onfocus="UpdateTooltip(this,42,10,event)" onclick="return OnShapeClick(42,10,event);" onkeyup="OnShapeKey(42,10,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="http://www.bbc.co.uk/" target="_top" COORDS="838,540,1024,540,1024,219,838,219,838,540" onmouseover="UpdateTooltip(this,42,6,event)" onfocus="UpdateTooltip(this,42,6,event)" onclick="return OnShapeClick(42,6,event);" onkeyup="OnShapeKey(42,6,event);">
+</MAP>
+        </div>
+   </body>
+</html>
