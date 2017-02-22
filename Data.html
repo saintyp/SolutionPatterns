@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel=stylesheet href="css\StyleSheet.css">
+</head>
+<body>
+   <ul>
+        <li><a href=".\index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Application Eco System</a>
+            <div class="dropdown-content">
+                <a href="./ApplicationEcoSystem/AppEcoSystem.htm">Application Eco System</a>
+                <a href="#">Other Info (Broken Link)</a>
+            </div>
+		<li class="dropdown">
+            <a href="#" class="dropbtn">How the site works</a>
+            <div class="dropdown-content">
+                <a href="HowitWorks.html">How it works Part 1</a>
+				<a href="HowitWorks2.html">How it works Part 2</a>
+				<a href="12FactorsPlainEnglish.html">12 Factors Plain English</a>
+                <a href="#">Other Stuff (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Reference Architectures</a>
+            <div class="dropdown-content">
+				<a href="ReferenceArchitectures.html">Reference Architectures</a>
+                <a href="ecommerce.html">E Commerce (Broken Link)</a>
+                <a href="bigdata.html">Big Data (Broken Link)</a>
+                <a href="ETL.html">ETL (Broken Link)</a>
+                <a href="Customerinsigts.html">Customer Insights (Broken Link)</a>
+                <a href="onlineshop.html">Online Shop</a>
+                <a href="others.html">Others (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Integration Patterns</a>
+            <div class="dropdown-content">
+                <a href="WhyIntegration.html">Why Integration Patterns</a>
+                <a href="IAM.html">IAM  (Broken Link)</a>
+                <a href="Logging.html">Logging</a>
+                <a href="DataSecurity.html">Data Security (Broken Link)</a>
+                </div>
+        </li>
+        <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
+    </ul>
+    <div>
+    <h1><b>Data</b></h1>
+	<p class="bodyText">More than likely your application will require to retrieve or store some data.  You need to consider how this is done is a cloud friendly way as this can be one of the major blockers for high availability and scalability within applications.  The tools and techniques that you could employ vary depend of what you are trying to achieve
+        </p>
+	<div id=persist>
+    <h2>Persisting data</h2>
+	<p class="bodyText">If you need to store data then you have the broad choice of two styles either relational or non-relational style databases.
+        </p>
+	</div>
+	<div id=Relational>
+	<h2>Relational  database</h2>
+	<p class="bodyText">A relational database (the concept) is a data structure that allows you to link information from different 'tables', or different types of data buckets. A data bucket must contain what is called a key or index (that allows to uniquely identify any atomic chunk of data within the bucket). Other data buckets may refer to that key so as to create a link between their data atoms and the atom pointed to by the key.
+        </p>
+	</div>
+	<div id=NonRelational>
+	<h2> Non-relational database</h2>
+	<p class="bodyText">A non-relational database just stores data without explicit and structured mechanisms to link data from different buckets to one another.
+
+Examples of relational databases,   sql server, MySQL, Amazon RDS
+Examples of non-relational databases, mongo dB, document dB,
+	</div>
+        </p>
+	<div id=Transient>
+	<h2>Transient data</h2>
+	<p class="bodyText">This maybe data that you need to hold on a customer as part of their journey or maybe data that you need to enrich the application.  If the data was lost it could be repopulated easily and would not affect the fundamentals for the application
+        </p>
+	<p class="bodyText">Transient data can be stored in caches (like memcache, redis, appfabric) for fast retrieval or in message queues for further processing.
+        </p>
+		</div>
+	<div id=Analytics>
+	<h2>Analytics</h2>
+	<p class="bodyText">This is primary data that will be used for data mining to produce MI or customer insights.  This data just needs to stored in the correct format but not necessarily in  a database.  Most pass systems can happily read this data from an object or block storage.
+        </p>
+		</div>
+		<div id=Backup>
+	<h2>Backup/Restore</h2>
+	<p class="bodyText">It is important in your solution design to include provision for what happens if it goes wrong.  For example, is this the primary source of the data or could it be reconstituted from another primary source (and how long would this take).  What would be the effect in application downtime of data corruption?  Do you need to keep secondary copies of your data in case of corruption.
+        </p>
+		</div>
+	<h2>What does good like for data?</h2>
+	<p class="bodyText">The choices you make in the section are very personal to your application.  However the core factors you need to consider are
+
+	• What type of data am I storing (transactional, key-value, data for analytics)
+	• Will my solution scale
+	• What would happen if my data were corrupted/manipulated
+	• How fast do you need to retrieve the data
+	• Do I need to persist the data or use it transiently
+	</p>
+	

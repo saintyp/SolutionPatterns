@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel=stylesheet href="css\StyleSheet.css">
+</head>
+<body>
+   <ul>
+        <li><a href=".\index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Application Eco System</a>
+            <div class="dropdown-content">
+                <a href="./ApplicationEcoSystem/AppEcoSystem.htm">Application Eco System</a>
+                <a href="#">Other Info (Broken Link)</a>
+            </div>
+		<li class="dropdown">
+            <a href="#" class="dropbtn">How the site works</a>
+            <div class="dropdown-content">
+                <a href="HowitWorks.html">How it works Part 1</a>
+				<a href="HowitWorks2.html">How it works Part 2</a>
+				<a href="12FactorsPlainEnglish.html">12 Factors Plain English</a>
+                <a href="#">Other Stuff (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Reference Architectures</a>
+            <div class="dropdown-content">
+				<a href="ReferenceArchitectures.html">Reference Architectures</a>
+                <a href="ecommerce.html">E Commerce (Broken Link)</a>
+                <a href="bigdata.html">Big Data (Broken Link)</a>
+                <a href="ETL.html">ETL (Broken Link)</a>
+                <a href="Customerinsigts.html">Customer Insights (Broken Link)</a>
+                <a href="onlineshop.html">Online Shop</a>
+                <a href="others.html">Others (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Integration Patterns</a>
+            <div class="dropdown-content">
+                <a href="WhyIntegration.html">Why Integration Patterns</a>
+                <a href="IAM.html">IAM  (Broken Link)</a>
+                <a href="Logging.html">Logging</a>
+                <a href="DataSecurity.html">Data Security (Broken Link)</a>
+                </div>
+        </li>
+        <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
+    </ul>
+    <div>
+    <h1><b>Application Lifecyle Management (ALM)</b></h1>
+	<div id=CICD>
+    <h2>Continous delivery/continuous integration</h2>
+	<p class="bodyText">To work effectively in the cloud your whole system needs to be able to be delivered and updated quickly.  The most widely adopted method of this is to setup a delivery pipeline (using something like Jenkins).  This will automate not only the delivery of the code but also the build and maintenance of the infrastructure.  If can also be used to provide elements of the compliance/security required in the cloud.
+        </p>
+	<p class="bodyText">If the pipeline is the control point and nothing else can deploy to your cloud infrastructure then you can move a lot of compliance and security to this pipeline thus simplifying the ongoing maintenance of the platform.
+        </p>
+	</div>
+	<div id=Autotest>
+	<h2>Automation Testing</h2>
+	<p class="bodyText">With automated release comes the need for automated testing.  It is important that the application is tested at multiple points throughout its journey in the pipeline.  This is to ensure that the application released into production functions correctly
+        </p>
+	</div>
+	<div id=AutoReleaseManagement>
+	<h2> Automatic release management</h2>
+	<p class="bodyText">To do continuous delivery it is important that code/infra can get released to production with minimal human intervention.  This element is about not only about automating code release through the pipeline but also automating approvals via change management.
+        </p>
+	<p class="bodyText">Roll back.  Your application needs to function so that any release to production can be rolled back to a previous version without the need to data purge. This is normally achieved by decoupling the database upgrades from the application upgrades so that each can be released asynchronously.
+        </p>
+	</div>
+	<h2>ALM what might good look like?</h2>
+	<p class="bodyText">
+	• Jenkins pipeline
+	• Infrastructure and environment defined in code.
+	• Calls from the pipeline to automate testing of the application for unit testing and integration testing.
+	• Calls from pipeline to verify base image compliance
+	• Calls from pipeline for change and release management
+	• Calls to deployment mechanism (i.e. ansible)
+Code designed in a way that it can be released separately and rolled back without issue.
+        </p>
+	
+	

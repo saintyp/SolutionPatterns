@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title></title>
 	<meta charset="utf-8" />
@@ -43,19 +45,26 @@
         <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
     </ul>
     <div>
-    <h1>Data</h1>	
-	<div id=Trasient>
-	<p> transient data section
-	</p>
+    <h1>Operations</h1>
+	<p class="bodyText">OSomeone somewhere will have to monitor or troubleshoot issues within the solution that you design.  This will fall in to the operations or run elements of the application.  You need to consider that everything that happens with in the solution needs to be logged into some sort of system so that monitoring and alerting can be used.
+        </p>
+	<div id=Logging>
+    <h2>Logging</h2>
+	<p class="bodyText"> you need to consider logging from all sources including but not limited to.  Network flow logs,  IAM logs, Application monitoring, infrastructure metrics, api access.
+        </p>
 	</div>
-	<div>
-		<img class="centered" src=".\Images\ApplicationEcoSystemNeeds2.png" width="800"; height="800";" >
+	<div id=Monitoring>
+	<h2>Monitoring</h2>
+	<p class="bodyText">Once you have collected the data what metrics  do you want to look for and what do you want them to give you.
+        </p>
 	</div>
-	<div id=persist>
-	<p> persisant data
-	</p>
+	<div id=Alerting>
+	<h2>Alerting</h2>
+	<p class="bodyText">What alerts are useful and who should they go to.  Are some alerts set to automatically do certain actions (like auto scaling)
 	</div>
-  
-        </div>
-   </body>
-</html>
+        </p>
+	<div id=Operationsgood>
+	<h2>What does good look like for operations?</h2>
+	<p class="bodyText">Any design that allows you to understand what is happening in the underlying infrastructure and application and allows you to act on this.     
+        </p>
+		</div>
