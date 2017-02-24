@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel=stylesheet href="css\StyleSheet.css">
+	<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+<script type="text/javascript" language="javascript">
+var pageID = 42;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+</script>
+</head>
+<body>
+    <ul>
+        <li><a href=".\index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Application Eco System</a>
+            <div class="dropdown-content">
+                <a href="./ApplicationEcoSystem/AppEcoSystem.htm">Application Eco System</a>
+				<a href="FirstPageOption1.html">FirstPageOption1</a>
+				<a href="FirstPageOption2.html">FirstPageOption2</a>
+                <a href="#">Other Info (Broken Link)</a>
+            </div>
+		<li class="dropdown">
+            <a href="#" class="dropbtn">How the site works</a>
+            <div class="dropdown-content">
+                <a href="HowitWorks.html">How it works Part 1</a>
+				<a href="HowitWorks2.html">How it works Part 2</a>
+				<a href="12FactorsPlainEnglish.html">12 Factors Plain English</a>
+                <a href="#">Other Stuff (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Reference Architectures</a>
+            <div class="dropdown-content">
+				<a href="ReferenceArchitectures.html">Reference Architectures</a>
+                <a href="ecommerce.html">E Commerce (Broken Link)</a>
+                <a href="bigdata.html">Big Data (Broken Link)</a>
+                <a href="ETL.html">ETL (Broken Link)</a>
+                <a href="Customerinsigts.html">Customer Insights (Broken Link)</a>
+                <a href="onlineshop.html">Online Shop</a>
+                <a href="others.html">Others (Broken Link)</a>
+            </div>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Integration Patterns</a>
+            <div class="dropdown-content">
+                <a href="WhyIntegration.html">Why Integration Patterns</a>
+                <a href="IAM.html">IAM  (Broken Link)</a>
+                <a href="Logging.html">Logging</a>
+                <a href="DataSecurity.html">Data Security (Broken Link)</a>
+                </div>
+        </li>
+        <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
+    </ul>
+    <div>
+    <h1>How to build cloud solutions</h1>
+	<p class =bodyText>A solution for a cloud application does not solely consist of how the application is architected. It is important to define how the system interacts with other elements.
+</p>
+	<p class=bodyText>The product requirements will lead to you making choices around the style of application you are trying to produce and how you need to store/retrieve data.  These factors flow into an application design which then needs to interact with the cloud eco system around it so that we have a full solution.
+
+	</p>
+
+<center>
+  <IMG id="ConvertedImage" SRC=".\images\CreateACloudApplicationv2.png" ALT="Page-25" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Logging" origTitle="Logging" TITLE="Logging" HREF="./Operations.html#Logging" target="_top" COORDS="441,687,440,682,438,677,435,672,432,669,427,666,422,665,417,665,412,665,407,667,403,671,400,675,397,679,396,684,396,689,397,694,400,699,403,703,407,706,412,708,417,709,422,709,427,707,432,705,435,701,438,697,440,692,441,687" onmouseover="UpdateTooltip(this,49,60,event)" onfocus="UpdateTooltip(this,49,60,event)" onclick="return OnShapeClick(49,60,event);" onkeyup="OnShapeKey(49,60,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Cloud Design Principles" origTitle="Cloud Design Principles" TITLE="Cloud Design Principles" HREF="./principles.html" target="_top" COORDS="120,469,120,12,86,12,86,469,120,469" onmouseover="UpdateTooltip(this,49,52,event)" onfocus="UpdateTooltip(this,49,52,event)" onclick="return OnShapeClick(49,52,event);" onkeyup="OnShapeKey(49,52,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Integration" origTitle="Integration" TITLE="Integration" HREF="./Integration.html#API" target="_top" COORDS="727,295,727,307,766,307,766,295,727,295" onmouseover="UpdateTooltip(this,49,47,event)" onfocus="UpdateTooltip(this,49,47,event)" onclick="return OnShapeClick(49,47,event);" onkeyup="OnShapeKey(49,47,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Data Analytics" origTitle="Data Analytics" TITLE="Data Analytics" HREF="./AppStyles.html#Dataanal" target="_top" COORDS="255,181,254,176,252,172,250,167,246,164,241,161,236,160,231,159,226,160,221,162,217,165,214,169,211,174,210,179,210,184,211,189,214,194,217,198,221,201,226,203,231,204,236,203,241,202,246,199,250,196,252,191,254,187,255,181" onmouseover="UpdateTooltip(this,49,43,event)" onfocus="UpdateTooltip(this,49,43,event)" onclick="return OnShapeClick(49,43,event);" onkeyup="OnShapeKey(49,43,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Event Driven" origTitle="Event Driven" TITLE="Event Driven" HREF="./AppStyles.html#EDA" target="_top" COORDS="285,110,284,105,282,100,280,96,276,93,271,90,266,89,261,88,256,89,251,91,247,94,244,98,242,103,240,108,240,113,242,118,244,123,247,127,251,130,256,132,261,133,266,132,271,131,276,128,280,125,282,120,284,116,285,110" onmouseover="UpdateTooltip(this,49,42,event)" onfocus="UpdateTooltip(this,49,42,event)" onclick="return OnShapeClick(49,42,event);" onkeyup="OnShapeKey(49,42,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Micro services" origTitle="Micro services" TITLE="Micro services" HREF="./AppStyles.html#Microservices" target="_top" COORDS="222,110,222,105,220,100,217,96,213,93,209,90,204,89,199,88,194,89,189,91,185,94,181,98,179,103,178,108,178,113,179,118,181,123,185,127,189,130,194,132,199,133,204,132,209,131,213,128,217,125,220,120,222,116,222,110" onmouseover="UpdateTooltip(this,49,41,event)" onfocus="UpdateTooltip(this,49,41,event)" onclick="return OnShapeClick(49,41,event);" onkeyup="OnShapeKey(49,41,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Backup &#38; Restore" origTitle="Backup &#38; Restore" TITLE="Backup &#38; Restore" HREF="./Data.html#Backup" target="_top" COORDS="246,386,246,381,244,376,241,372,237,368,233,366,228,364,223,364,218,365,213,367,209,370,205,374,203,378,202,383,202,389,203,394,205,398,209,402,213,405,218,407,223,408,228,408,233,406,237,404,241,400,244,396,246,391,246,386" onmouseover="UpdateTooltip(this,49,32,event)" onfocus="UpdateTooltip(this,49,32,event)" onclick="return OnShapeClick(49,32,event);" onkeyup="OnShapeKey(49,32,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Analytics Data" origTitle="Analytics Data" TITLE="Analytics Data" HREF="./Data.html#Analytics" target="_top" COORDS="197,345,197,339,195,335,192,330,188,327,184,324,179,323,174,322,169,323,164,325,160,328,156,332,154,337,153,342,153,347,154,352,156,357,160,361,164,364,169,366,174,367,179,366,184,365,188,362,192,359,195,355,197,350,197,345" onmouseover="UpdateTooltip(this,49,31,event)" onfocus="UpdateTooltip(this,49,31,event)" onclick="return OnShapeClick(49,31,event);" onkeyup="OnShapeKey(49,31,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Transient Data" origTitle="Transient Data" TITLE="Transient Data" HREF="./Data.html#Transient" target="_top" COORDS="296,345,296,339,294,335,291,330,287,327,283,324,278,323,273,322,268,323,263,325,259,328,255,332,253,337,252,342,252,347,253,352,255,357,259,361,263,364,268,366,273,367,278,366,283,365,287,362,291,359,294,355,296,350,296,345" onmouseover="UpdateTooltip(this,49,30,event)" onfocus="UpdateTooltip(this,49,30,event)" onclick="return OnShapeClick(49,30,event);" onkeyup="OnShapeKey(49,30,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Persistent Data" origTitle="Persistent Data" TITLE="Persistent Data" HREF="./Data.html#persist" target="_top" COORDS="244,285,241,281,237,278,232,275,227,274,222,274,217,276,213,278,209,281,206,286,204,290,203,295,203,300,205,305,207,310,211,313,215,316,220,318,225,319,230,318,235,317,239,314,243,310,245,306,247,301,248,296,247,291,245,286,245,285,244,285" onmouseover="UpdateTooltip(this,49,29,event)" onfocus="UpdateTooltip(this,49,29,event)" onclick="return OnShapeClick(49,29,event);" onkeyup="OnShapeKey(49,29,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Data Security" origTitle="Data Security" TITLE="Data Security" HREF="../..%5C..%5CWebsite%5CReferenceArchitecture%5CReferenceArchitecture%5CReferenceArchitecture%5CLogging.html" target="_top" COORDS="916,349,915,344,913,339,910,335,907,331,902,328,897,327,892,327,887,328,882,330,878,333,875,337,872,341,871,346,871,351,872,356,875,361,878,365,882,368,887,370,892,371,897,371,902,369,907,367,910,363,913,359,915,354,916,349" onmouseover="UpdateTooltip(this,49,10,event)" onfocus="UpdateTooltip(this,49,10,event)" onclick="return OnShapeClick(49,10,event);" onkeyup="OnShapeKey(49,10,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="IAM" origTitle="IAM" TITLE="IAM" HREF="./security.html#IAM" target="_top" COORDS="924,175,923,170,922,165,919,161,915,157,911,155,906,153,900,153,895,154,891,156,886,159,883,163,881,167,880,172,880,178,881,183,883,187,886,191,891,194,895,196,900,197,906,197,911,195,915,193,919,189,922,185,923,180,924,175" onmouseover="UpdateTooltip(this,49,9,event)" onfocus="UpdateTooltip(this,49,9,event)" onclick="return OnShapeClick(49,9,event);" onkeyup="OnShapeKey(49,9,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Logging" origTitle="Logging" TITLE="Logging" HREF="./Operations.html#Logging" target="_top" COORDS="609,332,608,327,607,322,604,318,600,314,596,312,591,310,585,310,580,311,576,313,571,316,568,320,566,324,565,329,565,335,566,340,568,344,571,348,576,351,580,353,585,354,591,354,596,352,600,350,604,346,607,342,608,337,609,332" onmouseover="UpdateTooltip(this,49,4,event)" onfocus="UpdateTooltip(this,49,4,event)" onclick="return OnShapeClick(49,4,event);" onkeyup="OnShapeKey(49,4,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

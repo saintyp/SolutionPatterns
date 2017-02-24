@@ -43,12 +43,27 @@
         <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
     </ul>
     <div>
-    <h1>Logging</h1>
-	<h2>Logging Pattern</h2>
-    <p class="bodyText">The logging pattern defines where to send your log files from both an operational and a application support view.  The pattern defines that all logs for operations will be sent to the cloud providers logging mechanism(Cloudwatch).  The logs are then collected via a connector to Qradar which stores the logs in the on premise Qradar.
+    <h1>Logging Pattern</h1>
+	<h2>Background</h2>
+	<p class="bodyText">The logging pattern defines the architecture of the logging solutions that are approved for use in. The logging pattern also defines where to send your log files from both an operational and a application support view.  The pattern defines that all logs for operations will be sent to the cloud providers logging mechanism(Cloudwatch).  The logs are then collected via a connector to Qradar which stores the logs in the on premise Qradar.
+	</p>
+	<h2>Pattern Diagram with explanation<h2>
+	<img src=".\Images\logging-patterns-04.png" width="1200"; height="800"
+	<h2>Link to deployment guidelines</h2>
+	<p class=bodyText">
+    <p class="bodyText"> <a href="./logging.html#deploymentguide">here</a> 
         </p>
-	<h2> Logging Implementation Guide </h2>
-	   <p class="bodyText">The logging implementation guide takes the requirements of the pattern (For which the required infrastructure components are already in place) and turns them into a practical implementation for you solution.  If will help you define and include all the required elements for your application solution. For example:
+	<h2> Ownership</h2>
+	<p class="bodyText">Pattern ownership is Joe blogs in Logging department
+    </p>
+	<h2>Status</h2>
+	<p class="bodyText">Not Approved/Not signed off
+    </p>
+	</div>
+	<div id=deploymentguide>
+	<h1>Deployment Guide</h1>
+    <p class="bodyText">This deployment guide defines defines the needs of the end consumer of the pattern (i.e qradar is the consumer of the logging pattern and it would require certain information for it to make sense). The logging deployment guide takes the requirements of the pattern (For which the required infrastructure components are already in place) and turns them into a practical requirements for your solution.  If will help you define and include all the required elements for your application solution. For example:
+        </p>
 	<p class="bodyText">
 <b>Tag all instances</b> with, BusinessName,Role/function 
 <br><br>
