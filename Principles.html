@@ -47,8 +47,8 @@
         <li style="float:right"><a a class="active" href="about1.html">About Us</a></li>
     </ul>
     <div>
-    <h1>Design Principles to follow</h1>
-    <p class="bodyText">This is our version of the 12 factors but tailored to our world
+    <h1>Cloud Design Principles</h1>
+    <p class="bodyText">These are the design priciples you should be following for the organisation some of which can be found in the 12 factor model.
         </p>
 	<table style="width:100%">
   <tr>
@@ -67,41 +67,85 @@
     <td>Strategic</td>
   </tr>
   <tr>
+    <td>Configure everything as code</td>
+    <td>Don't do any manual changes right code for everything</td> 
+    <td>Design</td>
+  </tr>
+    <tr>
     <td>Design for failure</td>
-    <td>Expect elements of you service to fail. Use patterns that include circuit breakers and loadbalancing.</td> 
+    <td>Expect elements of you service to fail. Use patterns that include circuit breakers</td> 
     <td>Design</td>
   </tr>
-      <tr>
-    <td>Tag/Label every resource</td>
-    <td>Tag and label every resource so you can track its usage. Instrument everything. Everything should be easily identifiable. Make tags relevant to billing and audit</td> 
+     <tr>
+    <td>Design for disposable resources</td>
+    <td>Don't store anything on the instance or in the service which would be lost if te instance failed.</td> 
     <td>Design</td>
-  </tr>
-      <tr>
+  </tr> 
+  <tr>
     <td>Design for loosly coupled behaviour</td>
     <td>Design your application so that it is not a monolith.  Don't have components that rely on each other</td> 
     <td>Design</td>
   </tr>
-     <tr>
+  <tr>
     <td>Design for security</td>
     <td>Conform to security policies. Apply security at all layers in the design</td> 
     <td>Design</td>
-  </tr> 
+  </tr>  
+  <tr>
+    <td>Design for scalability</td>
+    <td>Scale horizontally to increase availablity</td> 
+    <td>Design</td>
+  </tr>   
+    <tr>
+    <td>Design for data usage requirements</td>
+    <td>Understand the needs of your data and whether it needs to be persistent, transient, or for consumption in data analytics.</td> 
+    <td>Design</td>
+    </tr>  
+    <tr>
+    <td>Everything consumed as a service</td>
+    <td>All things that you need to interact should be treated as a service i.e logging as a service where you you have a set of defined. With a contract and sla</td> 
+    <td>Design</td>
+    </tr> 
+    <tr>
+    <td>Externalise all configuration and data</td>
+    <td>Don't tie config and data to where the application code runs</td> 
+    <td>Design</td>
+    </tr>  
+    <tr>
+    <td>Design availability into the applications</td>
+    <td>Don't rely on infrastructure to provide availablity</td> 
+    <td>Design</td>
+    </tr>
+    <tr>
+    <td>Tag/Label every resource</td>
+    <td>Tag and label every resource so you can track its usage. Instrument everything. Everything should be easily identifiable. Make tags relevant to billing and audit</td> 
+    <td>Design</td>
+  </tr>
+    <tr>
+    <td>Optimise for performance & cost</td>
+    <td>Optimise the solution to the best performance for the least cost</td> 
+    <td>Design</td>
+    </tr>  
+    <tr>
+    <td>Test continuously</td>
+    <td>From development through to production you should be constantly testing for resilience and performance(for performance try to test at scale). Test your automated recovery processes.</td> 
+    <td>Design</td>
+    </tr>
      <tr>
     <td>Enable tracability: Log everything</td>
     <td>Log everything that is happening in the environment</td> 
     <td>Design</td>
-  </tr> 
+  </tr> 	
     <tr>
-    <td>Design for scalability</td>
-    <td>Scale horizontally to increase availablity</td> 
+    <td>Make every process run in its own instance</td>
+    <td>Don't have an instance perform two functions separate them out</td> 
     <td>Design</td>
-  </tr>  
-  
+    </tr> 
     <tr>
     <td></td>
     <td></td> 
     <td></td>
-  </tr>
+    </tr>
 </table>
 
         </div>
