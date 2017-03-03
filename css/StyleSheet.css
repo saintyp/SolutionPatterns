@@ -95,10 +95,12 @@ h2 {
 	margin-top: 0em;
     margin-bottom: 2em
 	}
-ul.orderedlist {
+.orderedlist {
     list-style-type:none;
     color: green;
     padding: 10px 20px;
+	background-color: white;
+	display: list-item
 }
 IMG.centered {
     display: block;
